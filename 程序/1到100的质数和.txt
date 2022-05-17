@@ -1,0 +1,17 @@
+     public class Ko{
+	public static void main(String[] args) {
+	    int sum=0;
+	    int a;
+	    for (int b=2;b<=100;b++) { // 1不是素数，所以直接从2开始循环
+	        a = 2;
+ while (b%a != 0) {
+	            a++; //测试2至i的数字是否能被i整除，如不能就自加
+	                        }
+	        if (a == b){ //当有被整除的数字时，判断它是不是自身
+	            sum+=b;
+	            System.out.println(b); //如果是就打印出数字
+	                       }
+	                                                         }
+	    System.out.println("质数的和为："+sum);
+	                                             }
+}

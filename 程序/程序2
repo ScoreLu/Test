@@ -1,0 +1,32 @@
+import java.util.Random;
+import java.util.Scanner;
+public class Ko{
+public static void main(String[] args){   
+Scanner scan = new Scanner(System.in);
+System.out.print("请输入一个1~100之间的整数！");
+int b =(int) (Math.random()*100+1); 	    
+while(true){
+System.out.print("请输入：");
+Scanner objScanner = new Scanner(System.in);
+int a = objScanner.nextInt();
+if(a < b){
+System.out.println("考试成绩为：50，评定为：不及格");
+break;
+} if(70 > a > 60 ){
+System.out.println("及格");
+}if(80 > a > 71){
+System.out.println("中等");
+}if(90 > a > 81){
+System.out.println("良好");
+}if(100 > a > 91){
+System.out.println("优秀");
+}if(a < 60){
+System.out.println("考试成绩为：50，评定为：不及格");
+}
+a++;
+}
+}
+}
+}
+
+

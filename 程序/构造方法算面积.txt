@@ -1,0 +1,31 @@
+package Ko;
+ class JuxingDemo {
+private int chang,kuan;
+public int n()
+{
+return chang*kuan;
+}
+	public  void setchang(int a) 
+	{
+    chang = a;
+}
+    public int getchang(){
+    return chang;
+	}
+    public  void setkuan(int b) 
+{
+	kuan = b;			
+	}
+	public int getkuan(){
+	return kuan;
+	}
+ }
+ public class Ko
+{
+public static void main(String[]args)
+{JuxingDemo j= new JuxingDemo();
+j.setchang(20);
+j.setkuan(10);
+System.out.println(j.n());
+}
+}
